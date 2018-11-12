@@ -1,0 +1,22 @@
+{
+  "name": "wdbc1-s30a-data-assoc-embed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "embed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcskode/wdbc1-s30a-data-assoc-embed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lcskode/wdbc1-s30a-data-assoc-embed/issues"
+  },
+  "homepage": "https://github.com/lcskode/wdbc1-s30a-data-assoc-embed#readme",
+  "dependencies": {
+    "mongoose": "^5.3.11"
+  }
+}
