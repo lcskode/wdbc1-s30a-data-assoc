@@ -1,3 +1,5 @@
+var mongoose = require("mongoose");
+
 // USER - email, name
 var userRefSchema = new mongoose.Schema({
   email: String,
@@ -10,4 +12,5 @@ var userRefSchema = new mongoose.Schema({
     }
   ]
 });
-var UserRef = mongoose.model("UserRef", userRefSchema);
+
+module.exports = mongoose.model("UserRef", userRefSchema);

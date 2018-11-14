@@ -4,28 +4,28 @@ var mongoose = require("mongoose");
 // mongoose.connect("mongodb://localhost/blog_demo");
 mongoose.connect("mongodb://admin:admin123@ds159563.mlab.com:59563/wdbc1_blog_demo")
 
-var Post = require("models/post");
+var PostRef = require("./models/post");
 
-
+var UserRef = require("./models/user");
 
 
 /*****************************************************************************/
 
-// // find user with email, populate all posts, execute query
-// UserRef.findOne({email: "bob@gmailcom"}).populate("posts").exec(function(err, user){
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(user);
-//   }
-// });
+// find user with email, populate all posts, execute query
+UserRef.findOne({email: "bob@gmailcom"}).populate("posts").exec(function(err, user){
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(user);
+  }
+});
 
 
 
 // // THIS WORKS FINE AS WELL
 // PostRef.create({
 //   // create post
-//   title: "How to cook the best burger part 3",
+//   title: "How to cook the best burger part 4",
 //   content: "adfkjsdla ldfjsf dslkfjsflajfslfjs"
 // }, function(err, post){
 //   // select user with email
